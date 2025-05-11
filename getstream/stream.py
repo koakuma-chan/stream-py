@@ -129,7 +129,7 @@ class Stream(CommonClient):
         role: str = None,
         expiration=None,
     ):
-        now = int(time.time())
+        now = int(time.time()) - 10
 
         claims = {
             "iat": now,
